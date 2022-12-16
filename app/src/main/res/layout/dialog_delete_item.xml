@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_margin="10dp"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="26sp"
+        android:fontFamily="@font/primary_bold"
+        android:id="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete this Item anyway?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/dialog_btn_deleteCancel"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_marginLeft="10dp"
+        app:lottie_rawRes="@raw/exit"
+        app:lottie_speed="4" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/dialog_btn_deleteSure"
+        android:layout_width="52dp"
+        android:layout_height="52dp"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="48dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        app:lottie_autoPlay="true"
+
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/done"
+        app:lottie_speed="4" />
+
+
+</RelativeLayout>
